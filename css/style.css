@@ -4,13 +4,47 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
 
+/* Red Hat Mono Fonts Added */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap');
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+
+/* ===== NAVBAR SECTION ====== */
+.navbar-brand{
+	font-size: 1.7rem;
+	font-family: 'Red Hat Mono', monospace;
+}
+i.fa-solid.fa-bugs {
+	color: dodgerblue;
+	margin-left: -0.7rem;
+}
+.bug{
+	font-size: 1.9rem;
+	color: dodgerblue;;
+	font-weight: 600;
+	font-family: 'Red Hat Mono', monospace;
+}
+
+
+
 
 /*Body Section*/
 body{
 	margin: 0%;
 	padding: 0;
 	font-family: 'Poppins', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	
 }
+
+
 
 /*===Section ====*/
 
@@ -130,7 +164,7 @@ section h1{
 .home .carousel-item p{
 	font-size: 30px;
 	margin:0;
-	color: rgb(30, 248, 255);
+	color: dodgerblue;
 	font-weight: bolder;
 	opacity:0;
 }
@@ -277,7 +311,7 @@ section h1{
 .header-inner::before{
 	content: "";
 	position: absolute;
-	bottom: -200px;
+	bottom: -220px;
 	width: 400px;
 	height: 3px;
 	background: dodgerblue;
@@ -287,7 +321,7 @@ section h1{
 	.header-inner::before{
 		content: "";
 		position: absolute;
-		bottom: -500px;
+		bottom: -510px;
 		width: 100px;
 		height: 3px;
 		background: dodgerblue;
@@ -335,4 +369,86 @@ img {
 }
 #team .social-link i:hover {
 	color: dodgerblue;
+}
+
+
+/* ===== ANIMATION SECTION FOR CARD ===== */
+/* .card{
+	overflow-y: hidden;
+} */
+-webkit-scrollbar {
+    display: none;
+}
+.card.left{
+	border: 1px solid dodgerblue;
+	animation: left 2.5s ease forwards;
+	height: 39rem;
+	-webkit-box-shadow: 3px 5px 5px 2px rgba(130,41,255,0.37); 
+box-shadow: 3px 5px 5px 2px rgba(130,41,255,0.37);
+}
+@keyframes left {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.card.right{
+	border: 1px solid dodgerblue;
+	animation: right 2.5s ease forwards;
+	height: 39rem;
+	-webkit-box-shadow: 3px 5px 5px 2px rgba(130,41,255,0.37); 
+box-shadow: 3px 5px 5px 2px rgba(130,41,255,0.37);
+}
+@keyframes right {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.card.middle{
+	border: 1px solid dodgerblue;
+	animation: center 2.5s ease forwards;
+	height: 39rem;
+	-webkit-box-shadow: 3px 5px 5px 2px rgba(130,41,255,0.37); 
+box-shadow: 3px 5px 5px 2px rgba(130,41,255,0.37);
+}
+
+.card.up{
+	border: 1px solid dodgerblue;
+	animation: up 4s ease forwards;
+	-webkit-box-shadow: 3px 5px 5px 2px rgba(130,41,255,0.37); 
+box-shadow: 3px 5px 5px 2px rgba(130,41,255,0.37);
+}
+@keyframes up {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
